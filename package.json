@@ -3,14 +3,27 @@
   "version": "0.1.0",
   "description": "Submission for the final project for the joint assignment between MAD9124 and MAD9022.",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "contributors": [
     "Johanna Cano <cano0029@algonquinlive.com>",
-    "Eric Shantz <shan0255@algonquinlive.com"
+    "Eric Shantz"
   ],
-  
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cano0029/mad9124-w21-p1-giftr.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/cano0029/mad9124-w21-p1-giftr/issues"
+  },
+  "homepage": "https://github.com/cano0029/mad9124-w21-p1-giftr#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
