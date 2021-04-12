@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "DEBUG=Giftr:httpServer,Giftr:db node server"
+    "start": "DEBUG=Giftr:httpServer,Giftr:db nodemon server.js"
   },
   "keywords": [],
   "contributors": [
