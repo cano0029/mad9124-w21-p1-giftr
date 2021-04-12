@@ -1,0 +1,42 @@
+{
+  "name": "mad9124-w21-p1-giftr",
+  "version": "0.1.0",
+  "description": "Submission for the final project for the joint assignment between MAD9124 and MAD9022.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "contributors": [
+    "Johanna Cano <cano0029@algonquinlive.com>",
+    "Eric Shantz"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cano0029/mad9124-w21-p1-giftr.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/cano0029/mad9124-w21-p1-giftr/issues"
+  },
+  "homepage": "https://github.com/cano0029/mad9124-w21-p1-giftr#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "winston": "^3.3.3",
+    "xss": "^1.0.8"
+  }
+}
