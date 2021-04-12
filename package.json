@@ -6,12 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "DEBUG=Giftr:httpServer,Giftr:db nodemon server.js"
   },
   "keywords": [],
   "contributors": [
     "Johanna Cano <cano0029@algonquinlive.com>",
-    "Eric Shantz"
+    "Eric Shantz <shan0255@algonquinlive.com>"
   ],
   "license": "ISC",
   "repository": {
@@ -35,8 +35,10 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.3",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.7",
     "winston": "^3.3.3",
     "xss": "^1.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
