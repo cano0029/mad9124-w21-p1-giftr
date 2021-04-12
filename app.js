@@ -3,8 +3,8 @@ import morgan from 'morgan'
 import express from 'express'
 import connectDatabase from "./startup/connectDatabase.js"
 
-connectDatabase();
-const app = express();
+connectDatabase()
+const app = express()
 app.use(morgan('tiny'))
 app.use(express.json())
 
