@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 import createDebug from 'debug'
 
-const debug = createDebug('Giftr:httpServer')
+const debug = createDebug('Giftr:db')
 
 export default function connectDatabase(){
 mongoose
