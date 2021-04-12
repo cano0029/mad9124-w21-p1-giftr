@@ -35,8 +35,10 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.3",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.7",
     "winston": "^3.3.3",
     "xss": "^1.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
