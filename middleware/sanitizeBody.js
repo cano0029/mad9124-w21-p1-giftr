@@ -1,5 +1,5 @@
 import createDebug from 'debug'
-import xss from ('xss')
+import xss from 'xss'
 const debug = createDebug('Giftr:db')
 
 const sanitize = (sourceString) => {
@@ -11,7 +11,7 @@ const sanitize = (sourceString) => {
 }
 
 const stripTags = (payload) => {
-  const attributes = Object.assign({}, payload) // { ...payload }
+  const attributes = Object.assign({}, payload)
 
   for (let key in attributes) {
     if (attributes[key] instanceof Array) {
