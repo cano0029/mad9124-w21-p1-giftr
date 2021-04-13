@@ -22,7 +22,8 @@ const schema = new mongoose.Schema({
       message: (props) => {`${props.value} is not a valid email address.`}
     }
   }, 
-  password: { type: String, trim: true, maxlength: 70, required: true } // BUT we have to encrypt the password
+  password: { type: String, trim: true, maxlength: 70, required: true }, // BUT we have to encrypt the password
+  isAdmin: { type: Boolean, required: true, default: false }
 })
 
 schema.methods.generateAuthToken = function () { 
