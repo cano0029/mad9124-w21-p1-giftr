@@ -1,5 +1,7 @@
 import createDebug from 'debug'
 import sanitizeBody from '../middleware/sanitizeBody.js'
+import ResourceNotFound from '../exceptions/ResourceNotFound.js'
+import checkPermissions from '../middleware/checkPermissions.js'
 import Person from '../models/Person.js'
 import express from 'express'
 
@@ -21,10 +23,10 @@ router.post('/', sanitizeBody, async (req, res , next) => {
     }
 })
 
-router.get('/', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
         const document = await Person.findById(req.params.id).populate('owner')
-        if (!document) throw new Error('Resource not found')
+        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
 
         res.send({ data: document })
     } catch (err) {
@@ -44,7 +46,7 @@ const update = (overwrite = false) => async (req, res) => {
                 runValidators: true,
             }
         )
-        if (!document) throw new Error('Resource not found')
+        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
         sendResourceNotFound(req, res)
@@ -53,10 +55,10 @@ const update = (overwrite = false) => async (req, res) => {
 router.put('/:id', sanitizeBody, update(true))
 router.patch('/:id', sanitizeBody, update(false))
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', checkPermissions, async (req, res) => {
     try {
         const document = await Person.findByIdAndRemove(req.params.id)
-        if (!document) throw new Error('Resource not found')
+        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
         sendResourceNotFound(req, res)
