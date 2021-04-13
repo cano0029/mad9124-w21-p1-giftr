@@ -7,6 +7,7 @@ import peopleRouter from './routes/person.js'
 import giftsRouter from './routes/gift.js'
 import authRouter from './routes/auth/index.js'
 import handleErrors from './middleware/handleErrors.js'
+import logErrors from './middleware/logErrors.js'
 
 
 connectDatabase()
@@ -18,7 +19,10 @@ app.use(sanitizeMongo())
 app.use('/api/people', peopleRouter)
 app.use('/api/people/:id/gifts', giftsRouter)
 app.use('/auth', authRouter)
+
+app.use(logErrors)
 app.use(handleErrors)
+
 
 
 export default app
