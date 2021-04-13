@@ -14,7 +14,6 @@ function setPrice(number){
   return (number/100).toFixed(2)
 }
 
-const Model = mongoose.model('Gift', GiftSchema)
+const Gift= mongoose.model('Gift', GiftSchema)
 
-// export default Model
-export { Model, GiftSchema}
+export { Gift, GiftSchema }
