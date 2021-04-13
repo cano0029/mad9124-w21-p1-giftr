@@ -27,8 +27,7 @@ router.get('/:id', async (req, res) => {
     try {
         const document = await Person.findById(req.params.id).populate('owner')
         if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
-
-        res.send({ data: document })
+        res.send({ data: document }) 
     } catch (err) {
         sendResourceNotFound(req, res)
     }
