@@ -14,7 +14,6 @@ router.get('/', async (req, res) => {
 router.post('/', sanitizeBody, async (req, res) => {
     let newDocument = new Person(req.sanitizedBody)
     try {
-        console.log(newDocument , "NEW DOCUMENT BOIIISSSSSS")
         await newDocument.save()
         res.status(201).send({ data: newDocument })
     } catch (err) {
@@ -42,6 +41,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
+//using this for put and patch
 const update = (overwrite = false) => async (req, res) => {
     try {
         const document = await Person.findByIdAndUpdate(
@@ -77,7 +77,7 @@ function sendResourceNotFound(req, res) {
         error: [
             {
                 status: '404',
-                title: 'Resource does nto exist',
+                title: 'Resource does not exist',
                 description: `We could not find a person with id: ${req.params.id}`,
             },
         ],
