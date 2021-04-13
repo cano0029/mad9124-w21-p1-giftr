@@ -4,13 +4,44 @@ import authUser from '../../middleware/authUser.js'
 import express from 'express'
 const router = express.Router()
 
-router.post('/users', sanitizeBody, (req, res) => {
-    new User(req.sanitizedBody)
-        .save()
-        .then((newUser) => res.status(201).send({ data: newUser }))
-        console
-        .catch(next)
+// router.post('/users', sanitizeBody, (req, res) => {
+//     new User(req.sanitizedBody)
+//         .save()
+//         .then((newUser) => res.status(201).send({ data: newUser }))
+//         console
+//         .catch(next)
+
+
+
+//================================================QUARANTINE ZONE=======================================
+// router.post('/users', sanitizeBody , (req, res) => {
+//     new User(req.sanitizedBody)
+//     console.log("HEEYYYYYYYYY IM HERE")
+//         .save()
+//         .then((newUser) => res.status(201).send({ data: newUser }))
+//         .catch(next)
+// })
+
+router.post('/users', sanitizeBody, async (req, res) => {
+    try {
+        let newUser = new User(req.sanitizedBody)
+        await newUser.save()
+        res.status(201).send({ data: newUser })
+    } catch (err) {
+        console.log(err)
+        res.status(500).send({
+            errors: [
+                {
+                    status: '500',
+                    title: 'Server error',
+                    description: 'Problem saving document to the database.',
+                },
+            ],
+        })
+    }
 })
+//============================================QUARANTINE ZONE ENDS=======================================
+
 
 router.get('/users/me', authUser, async (req, res) => {
     req.user._id
