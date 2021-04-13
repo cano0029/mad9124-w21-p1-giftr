@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-export const GiftSchema = new mongoose.Schema({
+const GiftSchema = new mongoose.Schema({
   name: { type: String, minlength: 4, maxlength: 64, required: true },
   price: { type: Number, set: setPrice,  min: setPrice(100), default: setPrice(1000) },
   imageURL: { type: String , maxlength: 1024},
@@ -14,6 +14,6 @@ function setPrice(number){
   return (number/100).toFixed(2)
 }
 
-const Model = mongoose.model('Gift', GiftSchema)
+const Gift= mongoose.model('Gift', GiftSchema)
 
-export default Model
+export { Gift, GiftSchema }
