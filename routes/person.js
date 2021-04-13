@@ -14,7 +14,6 @@ router.get('/', async (req, res) => {
 router.post('/', sanitizeBody, async (req, res) => {
     let newDocument = new Person(req.sanitizedBody)
     try {
-        console.log(newDocument , "NEW DOCUMENT BOIIISSSSSS")
         await newDocument.save()
         res.status(201).send({ data: newDocument })
     } catch (err) {
