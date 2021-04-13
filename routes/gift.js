@@ -1,11 +1,12 @@
-import Gift from '../models/Gift.js'
 import Person from '../models/Person.js'
 import sanitizeBody from '../middleware/sanitizeBody.js'
 import express from 'express'
 const router = express.Router()
+import {Model} from '../models/Gift.js'
+
 
 router.post('/', sanitizeBody, async (req, res , next) => {
-    let newDocument = new Gift(req.sanitizedBody)
+    let newDocument = new Model(req.sanitizedBody)
     // push to array?
     // save to parent document (Person)?
     try {
