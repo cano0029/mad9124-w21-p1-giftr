@@ -37,19 +37,24 @@ schema.methods.toJSON = function () {
 }
 
 schema.statics.authenticate = async function (email, password) {
-  const user = await this.findOne({ email: email }) 
+  const user = await this.findOne({ email: email })
+  console.log(user , "this is the user") 
 
   const badHash = `$2b$${saltRounds}$invalidusernameaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
   const hashedPassword = user ? user.password : badHash
-  const passwordDidMatch = await bcrypt.compare(password, hashedPassword) 
+  const passwordDidMatch = await bcrypt.compare(password, hashedPassword)
+  console.log(`THIS IS THE PASSWORD: ${password}`)
+  console.log(`THIS IS THE HASHED PASSWORD: ${hashedPassword}`)
+  console.log(`DID THE PASSWORD MATCH?: ${passwordDidMatch}`) 
   
   return passwordDidMatch ? user : null
 }
 
-// password update/change
+// password update/change..... (is this pre or post?)
 schema.pre('save', async function (next) {
-  if(this.isModified('password')) return next() // returns boolean if password has changed - if it has not changed, just call next
+  if(!this.isModified('password')) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
   this.password = await bcrypt.hash(this.password, saltRounds) // this references to newUser mongoose model instance
+  console.log(this.password)
   next() // if password has been change, save it and then call next
 })
 
