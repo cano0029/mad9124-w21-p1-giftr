@@ -4,8 +4,6 @@ import authUser from '../../middleware/authUser.js'
 import express from 'express'
 const router = express.Router()
 
-
-
 //================================================QUARANTINE ZONE=======================================
 // router.post('/users', sanitizeBody , (req, res) => {
 //     new User(req.sanitizedBody)

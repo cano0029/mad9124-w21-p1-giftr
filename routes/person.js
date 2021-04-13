@@ -32,7 +32,7 @@ router.post('/', sanitizeBody, async (req, res) => {
 
 router.get('/', async (req, res) => {
     try {
-        const document = await Person.findById(req.params.id)
+        const document = await Person.findById(req.params.id).populate('owner')
         if (!document) throw new Error('Resource not found')
 
         res.send({ data: document })
