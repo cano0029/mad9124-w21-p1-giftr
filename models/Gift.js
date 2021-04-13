@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 export const GiftSchema = new mongoose.Schema({
   name: { type: String, minlength: 4, maxlength: 64, required: true },
-  price: { type: Number, get: getPrice, set: setPrice, min: 100, default: 1000 },
+  price: { type: Number, set: setPrice,  min: setPrice(100), default: setPrice(1000) },
   imageURL: { type: String , maxlength: 1024},
   store: { 
     name: { type: String , maxlength: 254},
@@ -10,12 +10,8 @@ export const GiftSchema = new mongoose.Schema({
   }
 })
 
-function getPrice(number){
-  return (number/100).toFixed(2)
-}
-
 function setPrice(number){
-  return number*100
+  return (number/100).toFixed(2)
 }
 
 const Model = mongoose.model('Gift', GiftSchema)
