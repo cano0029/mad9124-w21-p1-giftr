@@ -41,6 +41,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
+//using this for put and patch
 const update = (overwrite = false) => async (req, res) => {
     try {
         const document = await Person.findByIdAndUpdate(
