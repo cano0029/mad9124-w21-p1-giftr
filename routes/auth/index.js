@@ -7,7 +7,6 @@ const router = express.Router()
 //================================================QUARANTINE ZONE=======================================
 // router.post('/users', sanitizeBody , (req, res) => {
 //     new User(req.sanitizedBody)
-//     console.log("HEEYYYYYYYYY IM HERE")
 //         .save()
 //         .then((newUser) => res.status(201).send({ data: newUser }))
 //         .catch(next)
@@ -18,7 +17,6 @@ router.post('/users', sanitizeBody, async (req, res , next) => {
     try {
         let newUser = new User(req.sanitizedBody)
         await newUser.save()
-        res.setHeader('x-api-key' , 'shan0255 & cano0029'); //.....is this right??
         res.status(201).send({ data: newUser })
     } catch (error){
         next(error)
