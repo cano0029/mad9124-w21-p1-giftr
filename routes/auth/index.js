@@ -14,9 +14,11 @@ const router = express.Router()
 // })
 
 router.post('/users', sanitizeBody, async (req, res) => {
+    
     try {
         let newUser = new User(req.sanitizedBody)
         await newUser.save()
+        res.setHeader('x-api-key' , 'shan0255 & cano0029'); //.....is this right??
         res.status(201).send({ data: newUser })
     } catch (err) {
         console.log(err)
