@@ -6,7 +6,8 @@ const router = express.Router()
 
 router.post('/', sanitizeBody, async (req, res) => {
   let newDocument = new Gift(req.sanitizedBody)
-  
+  // push to array?
+  // save to parent document (Person)?
   try {
       await newDocument.save()
       res.status(201).send({ data: newDocument })
