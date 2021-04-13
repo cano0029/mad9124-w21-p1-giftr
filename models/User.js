@@ -16,6 +16,7 @@ const schema = new mongoose.Schema({
     maxlength: 512, 
     required: true, 
     unique: true, 
+    set: (value) => value.toLowerCase(),
     validate: {
       validator: (value) => {validator.isEmail(value)}, //returns boolean
       message: (props) => {`${props.value} is not a valid email address.`}

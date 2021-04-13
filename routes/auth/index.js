@@ -13,24 +13,15 @@ const router = express.Router()
 //         .catch(next)
 // })
 
-router.post('/users', sanitizeBody, async (req, res) => {
+router.post('/users', sanitizeBody, async (req, res , next) => {
     
     try {
         let newUser = new User(req.sanitizedBody)
         await newUser.save()
         res.setHeader('x-api-key' , 'shan0255 & cano0029'); //.....is this right??
         res.status(201).send({ data: newUser })
-    } catch (err) {
-        console.log(err)
-        res.status(500).send({
-            errors: [
-                {
-                    status: '500',
-                    title: 'Server error',
-                    description: 'Problem saving document to the database.',
-                },
-            ],
-        })
+    } catch (error){
+        next(error)
     }
 })
 //============================================QUARANTINE ZONE ENDS=======================================

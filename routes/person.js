@@ -11,22 +11,13 @@ router.get('/', async (req, res) => {
     res.send({ data: collection })
 })
 
-router.post('/', sanitizeBody, async (req, res) => {
+router.post('/', sanitizeBody, async (req, res , next) => {
     let newDocument = new Person(req.sanitizedBody)
     try {
         await newDocument.save()
         res.status(201).send({ data: newDocument })
-    } catch (err) {
-        console.log(err)
-        res.status(500).send({
-            errors: [
-                {
-                    status: '500',
-                    title: 'Server error',
-                    description: 'Problem saving document to the database.',
-                },
-            ],
-        })
+    } catch (error) {
+        next(error)
     }
 })
 
