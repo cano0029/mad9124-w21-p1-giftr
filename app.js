@@ -6,6 +6,8 @@ import sanitizeMongo from 'express-mongo-sanitize'
 import peopleRouter from './routes/person.js'
 import giftsRouter from './routes/gift.js'
 import authRouter from './routes/auth/index.js'
+import handleErrors from './middleware/handleErrors.js'
+
 
 connectDatabase()
 const app = express()
@@ -16,5 +18,7 @@ app.use(sanitizeMongo())
 app.use('/api/people', peopleRouter)
 app.use('/api/people/:id/gifts', giftsRouter)
 app.use('/auth', authRouter)
+app.use(handleErrors)
+
 
 export default app
