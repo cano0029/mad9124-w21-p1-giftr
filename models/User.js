@@ -36,7 +36,6 @@ schema.methods.toJSON = function () {
   return obj 
 }
 
-
 schema.statics.authenticate = async function (email, password) {
   const user = await this.findOne({ email: email }) 
 
