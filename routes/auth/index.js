@@ -8,6 +8,7 @@ router.post('/users', sanitizeBody, (req, res) => {
     new User(req.sanitizedBody)
         .save()
         .then((newUser) => res.status(201).send({ data: newUser }))
+        console
         .catch(next)
 })
 
