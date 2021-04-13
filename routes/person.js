@@ -4,7 +4,6 @@ import ResourceNotFound from '../exceptions/ResourceNotFound.js'
 import checkPermissions from '../middleware/checkPermissions.js'
 import Person from '../models/Person.js'
 import express from 'express'
-
 const debug = createDebug('Giftr:routes/person')
 const router = express.Router()
 
@@ -25,7 +24,7 @@ router.post('/', sanitizeBody, async (req, res , next) => {
 
 router.get('/:id', async (req, res) => {
     try {
-        const document = await Person.findById(req.params.id).populate('owner')
+        const document = await Person.findById(req.params.id).populate('gifts')
         if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
         res.send({ data: document }) 
     } catch (err) {
