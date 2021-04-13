@@ -5,7 +5,7 @@ const schema = new mongoose.Schema({
     name: { type: String, trim: true, maxlength: 254, required: true},
     birthDate: { type: Date , trim: true , required: true},
     owner: { type: String},
-    gifts: [ Gift ],
+    // gifts: [ Gift ],
     imageURL: { type: String , maxlength:1024},
 },
 {
