@@ -1,18 +1,24 @@
 import mongoose from 'mongoose'
-// import Gift from '../models/Gift.js'
+import { GiftSchema } from '../models/Gift.js'
 
-const schema = new mongoose.Schema({
+const PersonSchema = new mongoose.Schema({
     name: { type: String, trim: true, maxlength: 254, required: true},
     birthDate: { type: Date , trim: true , required: true},
-    owner: { type: String},
-    // gifts: [ Gift ],
-    imageURL: { type: String , maxlength:1024},
+    owner: { type:mongoose.Schema.Types.ObjectId, ref: 'User'},
+    sharedWith: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User',
+            required: false,
+        },
+    ],
+    gifts: [ GiftSchema ],
+    imageURL: { type: String , maxlength: 1024},
 },
 {
     timestamps: true
 })
 
-
-const Model = mongoose.model('Person', schema)
+const Model = mongoose.model('Person', PersonSchema)
 
 export default Model
