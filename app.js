@@ -12,6 +12,8 @@ app.use(express.json())
 app.use(sanitizeMongo())
 
 app.get('/', (req, res) => {})
-app.post('/test', sanitizeBody, (req, res) => {})
+app.post('/api/people', sanitizeBody, (req, res) => {
+  res.status(201).send(req.sanitizedBody)
+})
 
 export default app
