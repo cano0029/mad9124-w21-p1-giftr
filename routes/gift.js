@@ -1,8 +1,11 @@
-import { Gift } from '../models/Gift.js'
+import {Gift} from '../models/Gift.js'
 import sanitizeBody from '../middleware/sanitizeBody.js'
 import Person from '../models/Person.js'
 import express from 'express'
 const router = express.Router()
+import createDebug from 'debug'
+
+const debug = createDebug('Giftr:httpServer')
 
 // Testing purposes
 router.get('/:id/gifts', async (req, res) => {
@@ -57,6 +60,18 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, async (req, res, next) => {
         console.log(error)
     }
 })
+
+router.delete('/:id/gifts/:giftId', async (req, res) => {
+    try {
+        const document = await Gift.findByIdAndRemove(req.params.id)
+        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
+        res.send({ data: document })
+    } catch (err) {
+        sendResourceNotFound(req, res)
+    }
+})
+
+
 
 
 

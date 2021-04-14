@@ -22,6 +22,8 @@ router.post('/', sanitizeBody, async (req, res , next) => {
     }
 })
 
+
+
 router.get('/:id', async (req, res) => {
     try {
         const document = await Person.findById(req.params.id).populate('gifts')

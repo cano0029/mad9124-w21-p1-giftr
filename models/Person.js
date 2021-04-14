@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { GiftSchema } from '../models/Gift.js'
+import {GiftSchema} from '../models/Gift.js'
 
 const PersonSchema = new mongoose.Schema({
     name: { type: String, trim: true, maxlength: 254, required: true},
