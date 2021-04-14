@@ -3,7 +3,6 @@ import sanitizeBody from '../middleware/sanitizeBody.js'
 import Person from '../models/Person.js'
 import express from 'express'
 const router = express.Router()
-import {Model} from '../models/Gift.js'
 
 
 router.get('/', async (req, res) => {
