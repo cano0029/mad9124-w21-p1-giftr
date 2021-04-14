@@ -12,15 +12,16 @@ router.get('/', async (req, res) => {
 
 router.post('/', sanitizeBody, async (req, res , next) => {
     let newDocument = new Gift(req.sanitizedBody)
+    console.log(newDocument)
     // let person = new Person 
     // push to array?
     // save to parent document (Person)?
     try {
         // person.children.push(newDocument)
-        let giftOwner = await Person.findById(req.params.id)
+        let giftOwner = Person.findById(req.params.id)
         console.log("I AM A REAL BOY" , giftOwner)
         await newDocument.save()
-        let gift = await  Gift.findById(req.params.id)
+        let gift = newDocument._id
         console.log(`GIFT: ${gift}`)
         let giftArr = giftOwner.gifts
         console.log(`GIFT ARR: ${giftArr}`)
