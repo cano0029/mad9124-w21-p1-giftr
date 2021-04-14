@@ -3,9 +3,9 @@ import sanitizeBody from '../middleware/sanitizeBody.js'
 import Person from '../models/Person.js'
 import express from 'express'
 const router = express.Router()
-import {Model} from '../models/Gift.js'
+// import {Model} from '../models/Gift.js'
 
-
+// Testing purposes
 router.get('/', async (req, res) => {
     const collection = await Gift.find()
     res.send({ data: collection })
