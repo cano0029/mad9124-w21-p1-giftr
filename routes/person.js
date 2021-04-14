@@ -53,7 +53,7 @@ const update = (overwrite = false) => async (req, res) => {
 router.put('/:id', sanitizeBody, update(true))
 router.patch('/:id', sanitizeBody, update(false))
 
-router.delete('/:id', checkPermissions, async (req, res) => {
+router.delete('/:id', async (req, res) => {
     try {
         const document = await Person.findByIdAndRemove(req.params.id)
         if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
