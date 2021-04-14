@@ -1,39 +1,33 @@
-import { Gift } from '../models/Gift.js'
+import Gift from '../models/Gift.js'
 import sanitizeBody from '../middleware/sanitizeBody.js'
 import Person from '../models/Person.js'
 import express from 'express'
 const router = express.Router()
+import createDebug from 'debug'
+
+const debug = createDebug('Giftr:httpServer')
 
 // Testing purposes
-router.get('/', async (req, res) => {
+router.get('/:id/gifts', async (req, res) => {
     const collection = await Gift.find()
     res.send({ data: collection })
 })
 
-router.post('/', sanitizeBody, async (req, res , next) => {
-    let newDocument = new Gift(req.sanitizedBody)
-    console.log(newDocument)
-    // let person = new Person 
-    // push to array?
-    // save to parent document (Person)?
-    try {
-        // person.children.push(newDocument)
-        let giftOwner = Person.findById(req.params.id)
-        console.log("I AM A REAL BOY" , giftOwner)
-        await newDocument.save()
-        let gift = newDocument._id
-        console.log(`GIFT: ${gift}`)
-        let giftArr = giftOwner.gifts
-        console.log(`GIFT ARR: ${giftArr}`)
-        giftArr.push(gift)
+router.post('/:id/gifts', sanitizeBody, async (req, res , next) => {
+
         
-        //...get person(find by id) you attach gift to,
-        // save gift
-        // then add gift id to gifts array of person 
-        res.status(201).send({ data: newDocument })
-    } catch (error) {
-        next(error)
-    }
+        let person = await Person.findById(req.params.id)
+        
+        let attribute = req.sanitizedBody;
+        debug(attribute)
+        Gift(attribute)
+        .save()
+        .then(newGift =>{
+            person.gifts.push(newGift._id);
+            person.save()} )
+        .then(newGift => res.status(201).send({data: newGift}))
+        .catch(next)
+        
 })
 
 export default router
