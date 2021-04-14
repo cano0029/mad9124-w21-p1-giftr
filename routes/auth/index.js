@@ -27,8 +27,8 @@ router.post('/users', sanitizeBody, async (req, res , next) => {
 
 router.get('/users/me', authUser, async (req, res) => {
     req.user._id
+    console.log(req.user._id)
     const user = await User.findById(req.user._id)
-    user.isAdmin = true
     res.send({ data: user })
 })
 

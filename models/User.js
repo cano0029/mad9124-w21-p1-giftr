@@ -23,7 +23,6 @@ const schema = new mongoose.Schema({
     }
   }, 
   password: { type: String, trim: true, maxlength: 70, required: true }, // BUT we have to encrypt the password
-  isAdmin: { type: Boolean, required: true, default: false }
 })
 
 schema.methods.generateAuthToken = function () { 
