@@ -32,6 +32,30 @@ router.get('/users/me', authUser, async (req, res) => {
     res.send({ data: user })
 })
 
+// ========================================= PATCH QUARANTINE ZONE ==============================================
+router.patch('/users/me' , authUser, async (req, res)=>{
+
+    let userId = req.user._id
+
+    console.log(userId)
+    console.log("hello lets do some updating")
+
+        const document = await User.findByIdAndUpdate(
+            userId,
+            req.sanitizedBody,
+            {
+                new: true,
+                overwrite: true,
+                runValidators: true,
+            }
+        )
+        console.log(document)
+        console.log("hey its the end of the function")
+        document.save();
+})
+// ========================================= PATCH QUARANTINE ZONE ENDS==============================================
+
+
 // Login a user and return an authentication token.
 router.post('/tokens', sanitizeBody, async (req, res) => {
     const { email, password } = req.sanitizedBody
