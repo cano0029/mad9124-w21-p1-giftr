@@ -3,10 +3,10 @@ class ResourceNotFound extends Error {
     super (...args) 
     Error.captureStackTrace(this, ResourceNotFound) 
     
-    this.code = 404
-    this.status = '404'
-    this.title = 'Resource does not exist'
-    this.description = this.message
+    this.code = '404'
+    this.status = 'Not Found'
+    this.title = 'Resource does not exist.'
+    this.detail = this.message
   }
 }
 

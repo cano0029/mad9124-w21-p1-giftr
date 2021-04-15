@@ -13,12 +13,13 @@ const router = express.Router()
 // })
 
 router.post('/users', sanitizeBody, async (req, res , next) => {
-    
+
+    let newUser = new User(req.sanitizedBody)
     try {
-        let newUser = new User(req.sanitizedBody)
         await newUser.save()
         res.status(201).send({ data: newUser })
     } catch (error){
+        // TO DO: fix error handling middleware
         next(error)
     }
 })
