@@ -4,12 +4,16 @@ import authUser from '../middleware/authUser.js'
 import ResourceNotFound from '../exceptions/ResourceNotFound.js'
 import Person from '../models/Person.js'
 import express from 'express'
+import User from '../models/User.js'
 // const debug = createDebug('Giftr:routes/person')
 const router = express.Router()
 
 router.get('/', async (req, res) => {
     const collection = await Person.find()
     res.send({ data: collection })
+    // TO DO: how to only show the person created by that User??
+    // TO DO: Resource list requests should return an array of the primary resource objects only, 
+    // without populating any related objects.
 })
 
 router.post('/', sanitizeBody, authUser, async (req, res , next) => {

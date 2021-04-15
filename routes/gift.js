@@ -1,4 +1,4 @@
-import {Gift} from '../models/Gift.js'
+import { Gift } from '../models/Gift.js'
 import sanitizeBody from '../middleware/sanitizeBody.js'
 import Person from '../models/Person.js'
 import express from 'express'
