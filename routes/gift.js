@@ -54,10 +54,32 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
                 runValidators: true,
             }
         )
+        await document.save()
         console.log("Updated gift" , document)
         console.log("req.params.id" , req.params.id)
         console.log("req.params.giftId" , req.params.giftId)
-        //update person array, then save person
+        
+
+
+        //TO DO: the old array item still shows up in the person's gift array
+        gift.forEach((item)=>{
+            if(item.id === req.params.giftId){
+                console.log("update array")
+                console.log("PERSON" , person)
+                
+                console.log(gift.indexOf(item))
+                
+                //find old gift index in person array 
+                let indexNum = gift.indexOf(item)
+                //replace old gift with new gift 
+                item[indexNum] = document
+                //save person
+                person.save()
+
+                console.log("UPDATED PERSON" , person)
+                console.log(item[indexNum] , "HEYYYYYYY IM AN Item INDEX NUM")
+            }
+        })
 
         if (!document) throw new Error (`We could not find a Gift with id ${req.params.giftId}`)
 
