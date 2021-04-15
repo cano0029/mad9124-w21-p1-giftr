@@ -53,7 +53,7 @@ router.patch('/users/me' , authUser, async (req, res)=>{
         console.log("hey its the end of the function")
         document.save();
 })
-// ========================================= PATCH QUARANTINE ZONE ENDS==============================================
+// ========================================= PATCH QUARANTINE ZONE ENDS ==============================================
 
 
 // Login a user and return an authentication token.
