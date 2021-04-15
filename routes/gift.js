@@ -16,6 +16,7 @@ router.get('/:id/gifts', async (req, res) => {
 
 router.post('/:id/gifts', sanitizeBody, authUser, async (req, res , next) => {
     let gift = new Gift(req.sanitizedBody)
+    await gift.save();
     try {
         // get person(find by id) you attach gift to,
         let person = await Person.findById(req.params.id)
@@ -42,7 +43,7 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
         // how to access gift sub doc from person??
         const gift = person.gifts
         console.log(gift)
-
+// gift = [1,2,3]
         // update gift
         const document = await Gift.findByIdAndUpdate(
             req.params.giftId,
@@ -55,7 +56,8 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
         )
         console.log("Updated gift" , document)
         console.log("req.params.id" , req.params.id)
-        console.log("req.params.giftId" , req.params.Id)
+        console.log("req.params.giftId" , req.params.giftId)
+        //update person array, then save person
 
         if (!document) throw new Error (`We could not find a Gift with id ${req.params.giftId}`)
 
@@ -68,11 +70,11 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
 
 router.delete('/:id/gifts/:giftId', authUser, async (req, res) => {
     try {
-        const document = await Gift.findByIdAndRemove(req.params.id)
-        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
+        const document = await Gift.findByIdAndRemove(req.params.giftId)
+        if (!document) throw new Error(`We could not find a Person with id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
-        sendResourceNotFound(req, res)
+        console.log("try again")
     }
 })
 
