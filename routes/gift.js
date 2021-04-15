@@ -38,12 +38,11 @@ router.post('/:id/gifts', sanitizeBody, authUser, async (req, res , next) => {
 router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next) => {
     try {
         const person = await Person.findById(req.params.id)
-        console.log(person)
+        console.log("person: " , person)
 
-        // how to access gift sub doc from person??
         const gift = person.gifts
-        console.log(gift)
-// gift = [1,2,3]
+        console.log("Person.giftsArray: " , gift)
+
         // update gift
         const document = await Gift.findByIdAndUpdate(
             req.params.giftId,
