@@ -53,4 +53,8 @@ router.post('/tokens', sanitizeBody, async (req, res) => {
     })
 })
 
+router.patch('/users/me', authUser, async (req, res) => {
+    // TO DO: update password
+})
+
 export default router
