@@ -1,10 +1,10 @@
 // import createDebug from 'debug'
 import sanitizeBody from '../middleware/sanitizeBody.js'
 import authUser from '../middleware/authUser.js'
-import ResourceNotFound from '../exceptions/ResourceNotFound.js'
+import ResourceNotFoundError from '../exceptions/ResourceNotFound.js'
 import Person from '../models/Person.js'
 import express from 'express'
-import User from '../models/User.js'
+// import User from '../models/User.js'
 // const debug = createDebug('Giftr:routes/person')
 const router = express.Router()
 
@@ -29,20 +29,22 @@ router.post('/', sanitizeBody, authUser, async (req, res , next) => {
     }
 })
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res, next) => {
     try {
         const document = await Person.findById(req.params.id)
         .populate('gifts')
         .populate('owner')
-        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
         res.send({ data: document }) 
+        if (!document) {
+            throw new ResourceNotFoundError(`We could not find a Person with id ${req.params.id}`)
+        }
     } catch (err) {
-        sendResourceNotFound(req, res)
+        next(err)
     }
 })
 
 //using this for put and patch
-const update = (overwrite = false) => async (req, res) => {
+const update = (overwrite = false) => async (req, res, next) => {
     try {
         const document = await Person.findByIdAndUpdate(
             req.params.id,
@@ -53,35 +55,23 @@ const update = (overwrite = false) => async (req, res) => {
                 runValidators: true,
             }
         )
-        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
+        if (!document) throw new ResourceNotFoundError(`We could not find a Person with id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
-        sendResourceNotFound(req, res)
+        next(err)
     }
 }
 router.put('/:id', sanitizeBody, authUser, update(true))
 router.patch('/:id', sanitizeBody, authUser, update(false))
 
-router.delete('/:id', authUser, async (req, res) => {
+router.delete('/:id', authUser, async (req, res, next) => {
     try {
         const document = await Person.findByIdAndRemove(req.params.id)
-        if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
+        if (!document) throw new ResourceNotFoundError(`We could not find a Person with id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
-        sendResourceNotFound(req, res)
+        next(err)
     }
 })
-
-function sendResourceNotFound(req, res) {
-    res.status(404).send({
-        error: [
-            {
-                status: '404',
-                title: 'Resource does not exist',
-                description: `We could not find a person with id: ${req.params.id}`,
-            },
-        ],
-    })
-}
 
 export default router

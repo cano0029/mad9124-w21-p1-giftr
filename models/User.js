@@ -44,9 +44,6 @@ schema.statics.authenticate = async function (email, password) {
   const badHash = `$2b$${saltRounds}$invalidusernameaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
   const hashedPassword = user ? user.password : badHash
   const passwordDidMatch = await bcrypt.compare(password, hashedPassword)
-  console.log(`THIS IS THE PASSWORD: ${password}`)
-  console.log(`THIS IS THE HASHED PASSWORD: ${hashedPassword}`)
-  console.log(`DID THE PASSWORD MATCH?: ${passwordDidMatch}`) 
   
   return passwordDidMatch ? user : null
 }
