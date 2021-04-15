@@ -4,6 +4,7 @@ import Person from '../models/Person.js'
 import express from 'express'
 const router = express.Router()
 import createDebug from 'debug'
+import authUser from '../middleware/authUser.js'
 
 const debug = createDebug('Giftr:httpServer')
 
@@ -13,7 +14,7 @@ router.get('/:id/gifts', async (req, res) => {
     res.send({ data: collection })
 })
 
-router.post('/:id/gifts', sanitizeBody, async (req, res , next) => {
+router.post('/:id/gifts', sanitizeBody, authUser, async (req, res , next) => {
     let gift = new Gift(req.sanitizedBody)
     try {
         // get person(find by id) you attach gift to,
@@ -33,7 +34,7 @@ router.post('/:id/gifts', sanitizeBody, async (req, res , next) => {
 })
 
 // TO DO: 
-router.patch('/:id/gifts/:giftId', sanitizeBody, async (req, res, next) => {
+router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next) => {
     try {
         const person = await Person.findById(req.params.id)
         console.log(person)
@@ -52,6 +53,10 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, async (req, res, next) => {
                 runValidators: true,
             }
         )
+        console.log("Updated gift" , document)
+        console.log("req.params.id" , req.params.id)
+        console.log("req.params.giftId" , req.params.Id)
+
         if (!document) throw new Error (`We could not find a Gift with id ${req.params.giftId}`)
 
         res.send({ data: document })
@@ -61,7 +66,7 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, async (req, res, next) => {
     }
 })
 
-router.delete('/:id/gifts/:giftId', async (req, res) => {
+router.delete('/:id/gifts/:giftId', authUser, async (req, res) => {
     try {
         const document = await Gift.findByIdAndRemove(req.params.id)
         if (!document) throw new ResourceNotFound(`We could not find a Person with id ${req.params.id}`)
