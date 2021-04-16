@@ -42,7 +42,7 @@ router.post('/', sanitizeBody, authUser, async (req, res , next) => {
 
 router.get('/:id', async (req, res, next) => {
     try {
-        await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
+        // await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
         const document = await Person.findById(req.params.id)
         .populate('gifts')
         .populate('owner')
@@ -59,7 +59,7 @@ router.get('/:id', async (req, res, next) => {
 //using this for put and patch
 const update = (overwrite = false) => async (req, res, next) => {
     try {
-        await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
+        // await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
         const document = await Person.findByIdAndUpdate(
             req.params.id,
             req.sanitizedBody,
