@@ -18,7 +18,8 @@ const validateId = async id => {
 }
 
 router.get('/', async (req, res) => {
-    const collection = await Person.find()
+    const collection = await Person.find().select("-gifts") //this should stop gifts from populating 
+
     res.send({ data: collection })
     // TO DO: how to only show the person created by that User??
     // TO DO: Resource list requests should return an array of the primary resource objects only, 

@@ -29,7 +29,6 @@ router.post('/:id/gifts', sanitizeBody, authUser, async (req, res , next) => {
 
         // save gift to person array
         person.save()
-        console.log(giftArr)
         res.status(201).send({ data: gift })
     } catch (error) {
         log.error(error)
