@@ -2,6 +2,7 @@ import morgan from 'morgan'
 import express from 'express'
 import cors from 'cors'
 import compression from 'compression'
+import helmet from 'helmet'
 import connectDatabase from './startup/connectDatabase.js'
 import sanitizeMongo from 'express-mongo-sanitize'
 import peopleRouter from './routes/person.js'
@@ -21,6 +22,7 @@ logger.info(app.get('env')) // tells us in the terminal what ENV we are in - def
 // middlewares
 app.use(cors())
 app.use(compression())
+app.use(helmet())
 app.use(morgan('tiny'))
 app.use(express.json())
 app.use(sanitizeMongo())
