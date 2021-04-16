@@ -47,44 +47,6 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
             throw new ResourceNotFoundError(`We could not find a Gift with id ${req.params.giftId}`)
         }
         gift.set({_id: req.params.giftId, ...otherAttributes});
-        
-        //TO DO: the old array item still shows up in the person's gift array  
-        //foreach isnt good for updating stuff. find another array method that CAN update things
-            //if you want to use it
-
-        // update gift
-        // const document = await Gift.findOneAndUpdate( 
-        //     req.params.giftId,
-        //     req.sanitizedBody,
-        //     {
-        //         new: true,
-        //         overwrite: true,
-        //         runValidators: true,
-        //     }
-        // )
-
-        // console.log("Updated gift" , document)
-        //let indexNumber;
-            //let giftArr = people.gifts
-            //giftArr.foreach((item)=>{
-                //if(item.id === req.params.giftId){
-                    // console.log("update array")
-                    // console.log("PERSON" , person)
-
-                    // console.log(gift.indexOf(item))
-
-                    // //find old gift index in person array 
-                    // indexNum = gift.indexOf(item)
-                    // //replace old gift with new gift 
-                    // item[indexNum] = document
-                    // console.log(`DOCUMENT: ${document}`)
-                    // console.log(`INDEX NUMBER: ${indexNum}`)
-                    // //save person
-               // }
-            //})
-                
-        
-        // if (!document) throw new ResourceNotFoundError(`We could not find a Gift with id ${req.params.giftId}`)
 
         await person.save()
         console.log("PERSON" , person)
