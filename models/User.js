@@ -10,7 +10,10 @@ const jwtSecretKey = 'superSecretKey'
 const jwtoken = config.get('jwt')
 // const jwtSecretKey = jwtoken.secretKey
 // now, you have to manually set the key in your terminal by.. export GIFTR_JWTKEY=superSecretKey
-// note: generate a random superSecretKey by running in the terminal... node generateKey.js  // copy the output as your superSecretKey
+
+// Notes: 
+// generate a random superSecretKey by running in the terminal... node generateKey.js  // copy the output as your superSecretKey
+// if you change this key, every token that you generated using your previous key will no longer be validated
 
 const saltRounds = jwtoken.saltRounds
 
