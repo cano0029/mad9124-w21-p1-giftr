@@ -49,7 +49,6 @@ schema.methods.toJSON = function () {
 
 schema.statics.authenticate = async function (email, password) {
   const user = await this.findOne({ email: email })
-  console.log(user , "this is the user") 
 
   const badHash = `$2b$${saltRounds}$invalidusernameaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
   const hashedPassword = user ? user.password : badHash
@@ -58,12 +57,14 @@ schema.statics.authenticate = async function (email, password) {
   return passwordDidMatch ? user : null
 }
 
-// password update/change..... (is this pre or post?)
-schema.pre('save', async function (next) {
-  if(!this.isModified('password')) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
-  this.password = await bcrypt.hash(this.password, saltRounds) // this references to newUser mongoose model instance
-  console.log(this.password)
-  next() // if password has been change, save it and then call next
+// password update/change
+// changed it from 'save' to 'findOneAndUpdate' because 'save' does not work on User.findOneAndUpdate
+schema.pre('findOneAndUpdate', async function (next) {
+  const user = this
+  if(!user._update.password) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
+  user._update.password = await bcrypt.hash(user._update.password, saltRounds) // this references to newUser mongoose model instance
+  console.log('I AM YOUR NEW PASSWORD', user._update.password)
+  next()
 })
 
 schema.plugin(uniqueValidator, {
