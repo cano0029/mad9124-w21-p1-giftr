@@ -64,7 +64,7 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
         // )
 
         // console.log("Updated gift" , document)
-
+        //let indexNumber;
             //let giftArr = people.gifts
             //giftArr.foreach((item)=>{
                 //if(item.id === req.params.giftId){
@@ -74,7 +74,7 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
                     // console.log(gift.indexOf(item))
 
                     // //find old gift index in person array 
-                    // let indexNum = gift.indexOf(item)
+                    // indexNum = gift.indexOf(item)
                     // //replace old gift with new gift 
                     // item[indexNum] = document
                     // console.log(`DOCUMENT: ${document}`)
