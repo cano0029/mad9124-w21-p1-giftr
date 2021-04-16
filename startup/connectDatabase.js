@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
-import createDebug from 'debug'
+import logger from './logger.js'
 
-const debug = createDebug('Giftr:db')
+const log = logger.child({ module: 'connectDB' })
 
 export default function connectDatabase() {
     mongoose
@@ -13,10 +13,10 @@ export default function connectDatabase() {
             useUnifiedTopology: true,
         })
         .then(() => {
-            debug('Successfully connected to MongoDB ...')
+            log.info('Successfully connected to MongoDB ...')
         })
         .catch((err) => {
-            debug('Error connecting to MongoDB ... ', err.message)
+            log.error('Error connecting to MongoDB ... ', err.message)
             process.exit(1)
         })
 }

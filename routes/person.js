@@ -3,10 +3,11 @@ import sanitizeBody from '../middleware/sanitizeBody.js'
 import authUser from '../middleware/authUser.js'
 import ResourceNotFoundError from '../exceptions/ResourceNotFound.js'
 import Person from '../models/Person.js'
+import logger from '../startup/logger.js'
 import express from 'express'
 import mongoose from 'mongoose'
 
-// const debug = createDebug('Giftr:routes/person')
+const log = logger.child({ module: 'Giftr:routes/person' })
 const router = express.Router()
 
 // helper function to validateId so that throws desired ResourceNotFound error, not just a general 500 error
@@ -34,6 +35,7 @@ router.post('/', sanitizeBody, authUser, async (req, res , next) => {
         await newDocument.save()
         res.status(201).send({ data: newDocument })
     } catch (error) {
+        log.error(error)
         next(error)
     }
 })

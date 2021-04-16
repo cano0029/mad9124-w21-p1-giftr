@@ -3,11 +3,12 @@ import authUser from '../middleware/authUser.js'
 import ResourceNotFoundError from '../exceptions/ResourceNotFound.js'
 import { Gift } from '../models/Gift.js'
 import Person from '../models/Person.js'
+import logger from '../startup/logger.js'
 import express from 'express'
-const router = express.Router()
-import createDebug from 'debug'
 
-const debug = createDebug('Giftr:httpServer')
+const log = logger.child({ module: 'Giftr:routes/gifts' })
+const router = express.Router()
+
 
 // Testing purposes
 router.get('/:id/gifts', async (req, res) => {
@@ -31,6 +32,7 @@ router.post('/:id/gifts', sanitizeBody, authUser, async (req, res , next) => {
         console.log(giftArr)
         res.status(201).send({ data: gift })
     } catch (error) {
+        log.error(error)
         next(error)
     }
 })
