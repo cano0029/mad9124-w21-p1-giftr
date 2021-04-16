@@ -1,7 +1,9 @@
 import User from '../../models/User.js'
 import sanitizeBody from '../../middleware/sanitizeBody.js'
 import authUser from '../../middleware/authUser.js'
+import ResourceNotFoundError from '../../exceptions/ResourceNotFound.js'
 import express from 'express'
+
 const router = express.Router()
 
 //================================================QUARANTINE ZONE=======================================
@@ -19,7 +21,6 @@ router.post('/users', sanitizeBody, async (req, res , next) => {
         await newUser.save()
         res.status(201).send({ data: newUser })
     } catch (error){
-        // TO DO: fix error handling middleware
         next(error)
     }
 })
@@ -28,7 +29,6 @@ router.post('/users', sanitizeBody, async (req, res , next) => {
 
 router.get('/users/me', authUser, async (req, res) => {
     req.user._id
-    console.log(req.user._id)
     const user = await User.findById(req.user._id)
     res.send({ data: user })
 })
@@ -72,19 +72,32 @@ router.post('/tokens', sanitizeBody, async (req, res) => {
             ],
         })
     }
-
     res.status(201).send({
         data: { token: authenticatedUser.generateAuthToken() },
     })
 })
 
-router.patch('/users/me', authUser, async (req, res) => {
-    // TO DO: update password
-    // right now, all we have in the request object is the user id (refer back to get route above)
-    // instead, we need to retrieve the whole user object from the database (req.user?????)
-    // apply the password change - set the new password property on your sanitized body
-    // then call save() on the user object - which will automatically fire the pre 'save' hook in the User model (only runs when password has been changed) that will encrypt the password for us automatically
-    // send data
+router.patch('/users/me', sanitizeBody, authUser, async (req, res, next) => {
+    try {
+        // retrieve the whole user object from the database (req.user?????)
+        // apply the password change - set the new password property on your sanitized body
+        const user = await User.findOneAndUpdate(
+            req.user,
+            req.sanitizedBody, 
+            {
+                new: true,
+                overwrite: false,
+                runValidators: true
+            }
+        )
+        // then call save() on the user object
+        // which will automatically fire the pre 'save' hook in the User model (only runs when password has been changed) that will encrypt the password for us automatically
+        await user.save()
+        if (!user) throw new ResourceNotFoundError(`We could not find the requested User information`)
+        res.status(201).send({ data: user })
+    } catch (error){
+        next(error)
+    }
 })
 
 export default router
