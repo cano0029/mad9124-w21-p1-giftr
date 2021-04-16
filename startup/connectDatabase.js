@@ -1,22 +1,23 @@
 import mongoose from 'mongoose'
-import createDebug from 'debug'
+import config from 'config'
+import logger from './logger.js'
 
-const debug = createDebug('Giftr:db')
+const log = logger.child({ module: 'connectDB' })
+const dbConfig = config.get('db')
 
 export default function connectDatabase() {
     mongoose
-        .connect(`mongodb://localhost:27017/Giftr`, {
-            //${dbConfig.host}:${dbConfig.port}/${dbConfig.dbName}`, {
+        .connect(`mongodb://${dbConfig.host}:${dbConfig.port}/${dbConfig.dbName}`, {
             useNewUrlParser: true,
             useCreateIndex: true,
             useFindAndModify: false,
             useUnifiedTopology: true,
         })
         .then(() => {
-            debug('Successfully connected to MongoDB ...')
+            log.info('Successfully connected to MongoDB ...')
         })
         .catch((err) => {
-            debug('Error connecting to MongoDB ... ', err.message)
+            log.error('Error connecting to MongoDB ... ', err.message)
             process.exit(1)
         })
 }

@@ -1,12 +1,14 @@
-import { Gift } from '../models/Gift.js'
 import sanitizeBody from '../middleware/sanitizeBody.js'
-import Person from '../models/Person.js'
-import express from 'express'
-const router = express.Router()
-import createDebug from 'debug'
 import authUser from '../middleware/authUser.js'
+import ResourceNotFoundError from '../exceptions/ResourceNotFound.js'
+import { Gift } from '../models/Gift.js'
+import Person from '../models/Person.js'
+import logger from '../startup/logger.js'
+import express from 'express'
 
-const debug = createDebug('Giftr:httpServer')
+const log = logger.child({ module: 'Giftr:routes/gifts' })
+const router = express.Router()
+
 
 // Testing purposes
 router.get('/:id/gifts', async (req, res) => {
@@ -30,6 +32,7 @@ router.post('/:id/gifts', sanitizeBody, authUser, async (req, res , next) => {
         console.log(giftArr)
         res.status(201).send({ data: gift })
     } catch (error) {
+        log.error(error)
         next(error)
     }
 })
@@ -80,22 +83,21 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
             }
         })
 
-        if (!document) throw new Error (`We could not find a Gift with id ${req.params.giftId}`)
+        if (!document) throw new ResourceNotFoundError(`We could not find a Gift with id ${req.params.giftId}`)
 
         res.send({ data: document })
     } catch (error) {
-        // TO DO: fix
-        console.log(error)
+        next(error)
     }
 })
 
-router.delete('/:id/gifts/:giftId', authUser, async (req, res) => {
+router.delete('/:id/gifts/:giftId', authUser, async (req, res,next) => {
     try {
         const document = await Gift.findByIdAndRemove(req.params.giftId)
-        if (!document) throw new Error(`We could not find a Person with id ${req.params.id}`)
+        if (!document) throw new ResourceNotFoundError(`We could not find a Gift with id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
-        console.log("try again")
+        next(error)
     }
 })
 

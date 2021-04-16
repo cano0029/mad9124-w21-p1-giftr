@@ -1,0 +1,9 @@
+{
+  "db": {
+    "userName": "GIFTR_DBUSER",
+    "password": "GIFTR_DBPASSWORD"
+  },
+  "jwt": {
+    "secretKey": "GIFTR_JWTKEY"
+  }
+}
