@@ -231,3 +231,868 @@
 {"message":"development","level":"info","service":"Giftr"}
 {"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
 {"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"MissingSchemaError: Schema hasn't been registered for model \"GiftSchema\".\nUse mongoose.model(name, schema)\n    at NativeConnection.Connection.model (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/connection.js:1262:11)\n    at getModelsMapForPopulate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:301:59)\n    at populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4351:21)\n    at _populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4321:5)\n    at /Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4297:5\n    at promiseOrCallback (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/helpers/promiseOrCallback.js:9:12)\n    at Mongoose._promiseOrCallback (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/index.js:1152:10)\n    at Function.Model.populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4295:23)\n    at model.Query.Query._completeOne (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/query.js:2127:9)\n    at Immediate.<anonymous> (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/query.js:2166:10)\n    at Immediate.<anonymous> (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mquery/lib/utils.js:123:16)\n    at processImmediate (internal/timers.js:461:21)","message":"Schema hasn't been registered for model \"GiftSchema\".\nUse mongoose.model(name, schema)"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"MissingSchemaError: Schema hasn't been registered for model \"[object Object]\".\nUse mongoose.model(name, schema)\n    at NativeConnection.Connection.model (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/connection.js:1262:11)\n    at getModelsMapForPopulate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:301:59)\n    at populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4351:21)\n    at _populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4321:5)\n    at /Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4297:5\n    at promiseOrCallback (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/helpers/promiseOrCallback.js:9:12)\n    at Mongoose._promiseOrCallback (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/index.js:1152:10)\n    at Function.Model.populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4295:23)\n    at model.Query.Query._completeOne (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/query.js:2127:9)\n    at Immediate.<anonymous> (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/query.js:2166:10)\n    at Immediate.<anonymous> (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mquery/lib/utils.js:123:16)\n    at processImmediate (internal/timers.js:461:21)","message":"Schema hasn't been registered for model \"[object Object]\".\nUse mongoose.model(name, schema)"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"MissingSchemaError: Schema hasn't been registered for model \"gifts\".\nUse mongoose.model(name, schema)\n    at NativeConnection.Connection.model (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/connection.js:1262:11)\n    at getModelsMapForPopulate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:301:59)\n    at populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4351:21)\n    at _populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4321:5)\n    at /Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4297:5\n    at promiseOrCallback (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/helpers/promiseOrCallback.js:9:12)\n    at Mongoose._promiseOrCallback (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/index.js:1152:10)\n    at Function.Model.populate (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/model.js:4295:23)\n    at model.Query.Query._completeOne (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/query.js:2127:9)\n    at Immediate.<anonymous> (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mongoose/lib/query.js:2166:10)\n    at Immediate.<anonymous> (/Users/ericshantz/Documents/MADD /Year_1/Term 2/9124 JS/Assignments/GIFTR/mad9124-w21-p1-giftr/node_modules/mquery/lib/utils.js:123:16)\n    at processImmediate (internal/timers.js:461:21)","message":"Schema hasn't been registered for model \"gifts\".\nUse mongoose.model(name, schema)"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"TypeError: Cannot read property 'log' of undefined\n    at file:///Users/ericshantz/Documents/MADD%20/Year_1/Term%202/9124%20JS/Assignments/GIFTR/mad9124-w21-p1-giftr/routes/person.js:52:17\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","message":"Cannot read property 'log' of undefined"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"TypeError: Cannot read property '_id' of undefined\n    at file:///Users/ericshantz/Documents/MADD%20/Year_1/Term%202/9124%20JS/Assignments/GIFTR/mad9124-w21-p1-giftr/routes/person.js:50:35\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","message":"Cannot read property '_id' of undefined"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"TypeError: Cannot read property '_id' of undefined\n    at file:///Users/ericshantz/Documents/MADD%20/Year_1/Term%202/9124%20JS/Assignments/GIFTR/mad9124-w21-p1-giftr/routes/person.js:51:35\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","message":"Cannot read property '_id' of undefined"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"TypeError: Cannot read property 'gifts' of null\n    at file:///Users/ericshantz/Documents/MADD%20/Year_1/Term%202/9124%20JS/Assignments/GIFTR/mad9124-w21-p1-giftr/routes/person.js:52:49\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","message":"Cannot read property 'gifts' of null"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"development","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
