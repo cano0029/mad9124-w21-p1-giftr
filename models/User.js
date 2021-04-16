@@ -3,9 +3,15 @@ import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 import uniqueValidator from 'mongoose-unique-validator'
 import validator from 'validator'
+import config from 'config'
 
+// TO DO: (uncomment) dynamically set jwtSecretKey:
 const jwtSecretKey = 'superSecretKey' 
-const saltRounds = 14 
+const jwtoken = config.get('jwt')
+// const jwtSecretKey = jwtoken.secretKey
+// now, you have to manually set the key in your terminal by.. export GIFTR_JWTKEY=myOtherSuperSecretKey
+
+const saltRounds = jwtoken.saltRounds
 
 const schema = new mongoose.Schema({
   firstName: { type: String, trim: true, maxlength: 64, required: true },
