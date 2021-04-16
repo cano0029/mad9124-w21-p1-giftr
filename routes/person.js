@@ -75,8 +75,8 @@ const update = (overwrite = false) => async (req, res, next) => {
         next(err)
     }
 }
-router.put('/:id', sanitizeBody, authUser, validateId, update(true))
-router.patch('/:id', sanitizeBody, authUser, validateId, update(false))
+router.put('/:id', sanitizeBody, authUser, update(true))
+router.patch('/:id', sanitizeBody, authUser, update(false))
 
 router.delete('/:id', authUser, async (req, res, next) => {
     try {
