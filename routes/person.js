@@ -5,6 +5,7 @@ import Person from '../models/Person.js'
 import logger from '../startup/logger.js'
 import express from 'express'
 import mongoose from 'mongoose'
+import { GiftSchema } from '../models/Gift.js'
 
 const log = logger.child({ module: 'Giftr:routes/person' })
 const router = express.Router()
@@ -18,7 +19,8 @@ const validateId = async id => {
 }
 
 router.get('/', async (req, res) => {
-    const collection = await Person.find()
+    const collection = await Person.find().select("-gifts") //this should stop gifts from populating 
+
     res.send({ data: collection })
     // TO DO: how to only show the person created by that User??
     // TO DO: Resource list requests should return an array of the primary resource objects only, 
@@ -40,12 +42,14 @@ router.post('/', sanitizeBody, authUser, async (req, res , next) => {
 })
 
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:id', authUser ,async (req, res, next) => {
     try {
         // await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
         const document = await Person.findById(req.params.id)
-        .populate('gifts')
-        .populate('owner')
+        // .populate('gifts')
+        .populate('owner')        
+
+        console.log(`DOCUMENT.GIFTS: ${document.gifts}`)
         res.send({ data: document }) 
         if (!document) {
             throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)

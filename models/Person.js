@@ -12,7 +12,7 @@ const PersonSchema = new mongoose.Schema({
             required: false,
         },
     ],
-    gifts: [ GiftSchema ],
+    gifts: [ GiftSchema ], 
     imageURL: { type: String , maxlength: 1024},
 },
 {
