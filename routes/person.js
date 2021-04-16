@@ -1,4 +1,3 @@
-// import createDebug from 'debug'
 import sanitizeBody from '../middleware/sanitizeBody.js'
 import authUser from '../middleware/authUser.js'
 import ResourceNotFoundError from '../exceptions/ResourceNotFound.js'
