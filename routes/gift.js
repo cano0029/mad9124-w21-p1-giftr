@@ -56,12 +56,29 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
     }
 })
 
-router.delete('/:id/gifts/:giftId', authUser, async (req, res,next) => {
+router.delete('/:id/gifts/:giftId', authUser, sanitizeBody, async (req, res,next) => {
+    // try {
+    //     const document = await Gift.findByIdAndRemove(req.params.giftId)
+    //     if (!document) throw new ResourceNotFoundError(`We could not find a Gift with id ${req.params.id}`)
+    //     res.send({ data: document })
+    // } catch (err) {
+    //     next(error)
+    // }
+
     try {
-        const document = await Gift.findByIdAndRemove(req.params.giftId)
-        if (!document) throw new ResourceNotFoundError(`We could not find a Gift with id ${req.params.id}`)
-        res.send({ data: document })
-    } catch (err) {
+        const {_id, ...otherAttributes} = req.sanitizedBody;
+        const person = await Person.findById(req.params.id)
+        const gift = person.gifts.id(req.params.giftId)
+
+        if(!gift){
+            throw new ResourceNotFoundError(`We could not find a Gift with id ${req.params.giftId}`)
+        }
+        gift.remove({_id: req.params.giftId});
+
+        await person.save()
+        console.log("PERSON" , person)
+        res.send({ data: person })
+    } catch (error) {
         next(error)
     }
 })
