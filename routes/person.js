@@ -52,6 +52,7 @@ router.get('/:id', async (req, res, next) => {
             throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
         }
     } catch (err) {
+        log.error(err)
         next(err)
     }
 })
