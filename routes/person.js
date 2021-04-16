@@ -4,9 +4,18 @@ import authUser from '../middleware/authUser.js'
 import ResourceNotFoundError from '../exceptions/ResourceNotFound.js'
 import Person from '../models/Person.js'
 import express from 'express'
-// import User from '../models/User.js'
+import mongoose from 'mongoose'
+
 // const debug = createDebug('Giftr:routes/person')
 const router = express.Router()
+
+// helper function to validateId so that throws desired ResourceNotFound error, not just a general 500 error
+const validateId = async id => {
+    if (mongoose.Types.ObjectId.isValid(id)){
+        if (await Person.countDocuments({ _id: id })) return true
+    }
+    throw new ResourceNotFoundError(`We could not find a Person with id ${id}`)
+}
 
 router.get('/', async (req, res) => {
     const collection = await Person.find()
@@ -29,14 +38,16 @@ router.post('/', sanitizeBody, authUser, async (req, res , next) => {
     }
 })
 
+
 router.get('/:id', async (req, res, next) => {
     try {
+        await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
         const document = await Person.findById(req.params.id)
         .populate('gifts')
         .populate('owner')
         res.send({ data: document }) 
         if (!document) {
-            throw new ResourceNotFoundError(`We could not find a Person with id ${req.params.id}`)
+            throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
         }
     } catch (err) {
         next(err)
@@ -46,6 +57,7 @@ router.get('/:id', async (req, res, next) => {
 //using this for put and patch
 const update = (overwrite = false) => async (req, res, next) => {
     try {
+        await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
         const document = await Person.findByIdAndUpdate(
             req.params.id,
             req.sanitizedBody,
@@ -55,19 +67,20 @@ const update = (overwrite = false) => async (req, res, next) => {
                 runValidators: true,
             }
         )
-        if (!document) throw new ResourceNotFoundError(`We could not find a Person with id ${req.params.id}`)
+        if (!document) throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
         next(err)
     }
 }
-router.put('/:id', sanitizeBody, authUser, update(true))
-router.patch('/:id', sanitizeBody, authUser, update(false))
+router.put('/:id', sanitizeBody, authUser, validateId, update(true))
+router.patch('/:id', sanitizeBody, authUser, validateId, update(false))
 
 router.delete('/:id', authUser, async (req, res, next) => {
     try {
+        await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
         const document = await Person.findByIdAndRemove(req.params.id)
-        if (!document) throw new ResourceNotFoundError(`We could not find a Person with id ${req.params.id}`)
+        if (!document) throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
         res.send({ data: document })
     } catch (err) {
         next(err)
