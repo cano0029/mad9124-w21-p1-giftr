@@ -56,6 +56,10 @@ router.post('/tokens', sanitizeBody, async (req, res) => {
 
 router.patch('/users/me', authUser, async (req, res) => {
     // TO DO: update password
+    // right now, all we have in the request object is the user id (refer back to get route above)
+    // instead, we need to retrieve the whole user object from the database (req.user?????)
+    // apply the password change - set the new password property on your sanitized body
+    // then call save() on the user object - which will automatically fire the pre 'save' hook in the User model (only runs when password has been changed) that will encrypt the password for us automatically
 })
 
 export default router
