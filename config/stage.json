@@ -5,6 +5,6 @@
     "password": "8qFup8YeLnqKi2TG",
     "host": "giftr.l2elw.mongodb.net",
     "authSource": "test",
-    "name": "GIFTR_DB"
+    "name": "giftr_api"
   }
 }

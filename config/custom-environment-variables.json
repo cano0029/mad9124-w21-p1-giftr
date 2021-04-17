@@ -4,6 +4,6 @@
     "password": "GIFTR_DBPASSWORD"
   },
   "jwt": {
-    "secretKey": "GIFTR_JWTKEY"
+    "secretKey": "API_JWTKEY"
   }
 }

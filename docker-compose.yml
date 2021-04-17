@@ -1,10 +1,10 @@
 version: '3.8'
 services:
   express:
-    image: giftr_db
-    container_name: giftr_db
+    image: giftr_api
+    container_name: giftr_api
     environment:
-      GIFTR_JWTKEY: superSecretKey
+      API_JWTKEY: oilyg1440kywh5jiccv17wlp0ddrwl
       API_PORT: 80
       NODE_ENV: 'stage'
     ports:
