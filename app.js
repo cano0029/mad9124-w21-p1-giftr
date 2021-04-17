@@ -28,6 +28,7 @@ app.use(express.json())
 app.use(sanitizeMongo())
 
 // routes
+app.get('/', (req, res) => res.send({ data: { healthStatus: 'UP' } })) // check to see if deployed app is still up and running
 app.use('/api/people', peopleRouter)
 app.use('/api/people', giftsRouter)
 app.use('/auth', authRouter)
