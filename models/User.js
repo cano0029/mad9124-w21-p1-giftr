@@ -57,13 +57,17 @@ schema.statics.authenticate = async function (email, password) {
   return passwordDidMatch ? user : null
 }
 
-// password update/change
-// changed it from 'save' to 'findOneAndUpdate' because 'save' does not work on User.findOneAndUpdate
-schema.pre('findOneAndUpdate', async function (next) {
+schema.pre('save', async function (next) {
   const user = this
-  if(!user._update.password) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
-  user._update.password = await bcrypt.hash(user._update.password, saltRounds) // this references to newUser mongoose model instance
-  console.log('I AM YOUR NEW PASSWORD', user._update.password)
+  if(!user.isModified('password')) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
+  user.password = await bcrypt.hash(user.password, saltRounds) // this references to newUser mongoose model instance
+  next()
+})
+
+// password update/change
+schema.pre('findOneAndUpdate', async function (next) {
+  if(!this._update.password) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
+  this._update.password = await bcrypt.hash(this._update.password, saltRounds) // this references to newUser mongoose model instance
   next()
 })
 
