@@ -46,6 +46,7 @@ export default async function connectDatabase() {
                 dbName: name
             }
         )
+        log.info(`Connected to MongoDB at ${name}...`)
     } catch(err) {
         log.error(`Error connecting to MongoDB ...`, err)
         process.exit(1)

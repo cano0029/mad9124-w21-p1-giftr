@@ -4,7 +4,7 @@
     "username": "GIFTR_Admin",
     "password": "8qFup8YeLnqKi2TG",
     "host": "giftr.l2elw.mongodb.net",
-    "authSource": "myFirstDatabase",
-    "name": "mad9124-w1-p1-giftr"
+    "authSource": "test",
+    "name": "GIFTR_DB"
   }
 }
