@@ -74,6 +74,8 @@ const update = (overwrite = false) => async (req, res, next) => {
             }
         )
         if (!document) throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
+        document.owner = req.user._id
+        await document.save()
         res.send({ data: document })
     } catch (err) {
         next(err)
