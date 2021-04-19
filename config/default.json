@@ -3,7 +3,7 @@
   "db": {
     "host": "localhost",
     "port": "27017",
-    "dbName": "GIFTR_DB"
+    "dbName": "giftr_api"
   },
   "jwt": {
     "saltRounds": 14

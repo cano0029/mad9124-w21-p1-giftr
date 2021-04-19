@@ -6,10 +6,10 @@ import validator from 'validator'
 import config from 'config'
 
 // TO DO: (uncomment) dynamically set jwtSecretKey:
-const jwtSecretKey = 'superSecretKey' 
+// const jwtSecretKey = 'superSecretKey' 
 const jwtoken = config.get('jwt')
-// const jwtSecretKey = jwtoken.secretKey
-// now, you have to manually set the key in your terminal by.. export GIFTR_JWTKEY=superSecretKey
+const jwtSecretKey = jwtoken.secretKey
+// now, you have to manually set the key in your terminal by.. export API_JWTKEY=randomGeneratorKey
 
 // Notes: 
 // generate a random superSecretKey by running in the terminal... node generateKey.js  // copy the output as your superSecretKey
@@ -57,13 +57,17 @@ schema.statics.authenticate = async function (email, password) {
   return passwordDidMatch ? user : null
 }
 
-// password update/change
-// changed it from 'save' to 'findOneAndUpdate' because 'save' does not work on User.findOneAndUpdate
-schema.pre('findOneAndUpdate', async function (next) {
+schema.pre('save', async function (next) {
   const user = this
-  if(!user._update.password) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
-  user._update.password = await bcrypt.hash(user._update.password, saltRounds) // this references to newUser mongoose model instance
-  console.log('I AM YOUR NEW PASSWORD', user._update.password)
+  if(!user.isModified('password')) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
+  user.password = await bcrypt.hash(user.password, saltRounds) // this references to newUser mongoose model instance
+  next()
+})
+
+// password update/change
+schema.pre('findOneAndUpdate', async function (next) {
+  if(!this._update.password) return next() // returns boolean if password has changed - if it has not changed, just call next .... we added the exclamation point and it worked
+  this._update.password = await bcrypt.hash(this._update.password, saltRounds) // this references to newUser mongoose model instance
   next()
 })
 

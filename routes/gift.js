@@ -50,7 +50,7 @@ router.patch('/:id/gifts/:giftId', sanitizeBody, authUser, async (req, res, next
 
         await person.save()
         console.log("PERSON" , person)
-        res.send({ data: gifts })
+        res.send({ data: gift })
     } catch (error) {
         next(error)
     }
@@ -69,7 +69,7 @@ router.delete('/:id/gifts/:giftId', authUser, sanitizeBody, async (req, res,next
 
         await person.save()
         console.log("PERSON" , person)
-        res.send({ data: gifts })
+        res.send({ data: gift })
     } catch (error) {
         next(error)
     }

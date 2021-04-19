@@ -113,7 +113,7 @@
   formData.append('email', profile.email);
           */
           fetch('https://jsonplaceholder.typicode.com/todos/1', { //when i Post, write POST and pass in the form body
-                method: 'GET',
+                method: 'POST',
                 body: formData
             }).then((response) => {
               response.json()
