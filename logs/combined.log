@@ -1164,3 +1164,50 @@
 {"message":"development","level":"info","service":"Giftr"}
 {"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
 {"module":"connectDB","message":"Successfully connected to MongoDB ...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"Giftr:routes/gifts","level":"error","service":"Giftr","stack":"TypeError: Cannot read property 'gifts' of null\n    at file:///Users/johc/Documents/code/Year1/w2021/mad9124/giftr/mad9124-w21-p1-giftr/routes/gift.js:27:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","message":"Cannot read property 'gifts' of null"}
+{"module":"Giftr:routes/person","level":"error","service":"Giftr","stack":"TypeError: Cannot read property 'gifts' of null\n    at file:///Users/johc/Documents/code/Year1/w2021/mad9124/giftr/mad9124-w21-p1-giftr/routes/person.js:52:49\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","message":"Cannot read property 'gifts' of null"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Database is connected...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Database is connected...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connect to MongoDB at GIFTR_DB...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connected to MongoDB at GIFTR_DB...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connected to MongoDB at GIFTR_API...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connected to MongoDB at GIFTR_DB...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"HTTP server listening on port 3030","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connected to MongoDB at GIFTR_DB...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"level":"info","message":"Express is listening on port 3030 ..."}
+{"module":"connectDB","message":"Connected to MongoDB at GIFTR_DB...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"Express is listening on port 3030 ...","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connected to MongoDB at GIFTR_DB...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"Express is listening on port 3030 ...","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connected to MongoDB at GIFTR_DB...","level":"info","service":"Giftr"}
+{"message":"stage","level":"info","service":"Giftr"}
+{"module":"Giftr:httpServer","message":"Express is listening on port 3030 ...","level":"info","service":"Giftr"}
+{"module":"connectDB","message":"Connected to MongoDB at giftr_api...","level":"info","service":"Giftr"}

@@ -27,7 +27,10 @@ app.use(morgan('tiny'))
 app.use(express.json())
 app.use(sanitizeMongo())
 
-// routes
+// health check route
+app.get('/', (req, res) => res.send({ data: { healthStatus: 'UP' } })) 
+
+// route handlers
 app.use('/api/people', peopleRouter)
 app.use('/api/people', giftsRouter)
 app.use('/auth', authRouter)
