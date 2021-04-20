@@ -6,7 +6,7 @@ import logger from './startup/logger.js'
 const log = logger.child({ module: 'Giftr:httpServer' })
 
 const httpServer = http.createServer(app)
-const port = process.env.API_PORT || 3031
+const port = process.env.API_PORT || 3030
 httpServer.listen(port)
 httpServer.on('error', onError)
 httpServer.on('listening', onListening)
