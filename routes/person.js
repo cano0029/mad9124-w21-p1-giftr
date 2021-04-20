@@ -10,49 +10,39 @@ import { GiftSchema } from '../models/Gift.js'
 const log = logger.child({ module: 'Giftr:routes/person' })
 const router = express.Router()
 
-// helper function to validateId so that throws desired ResourceNotFound error, not just a general 500 error
-const validateId = async id => {
-    if (mongoose.Types.ObjectId.isValid(id)){
+const validateId = async (id) => {
+    if (mongoose.Types.ObjectId.isValid(id)) {
         if (await Person.countDocuments({ _id: id })) return true
     }
     throw new ResourceNotFoundError(`We could not find a Person with id ${id}`)
 }
 
-router.get('/', async (req, res) => {
-    const collection = await Person.find().select("-gifts") //this should stop gifts from populating 
-
+router.get('/', authUser, async (req, res) => {
+    const collection = await Person.find({ owner: req.user._id }).select('-gifts')
     res.send({ data: collection })
-    // TO DO: how to only show the person created by that User??
-    // TO DO: Resource list requests should return an array of the primary resource objects only, 
-    // without populating any related objects.
 })
 
-router.post('/', sanitizeBody, authUser, async (req, res , next) => {
-    let newDocument = new Person(req.sanitizedBody)
-    console.log('HELLO I AM THE OWNER:',req.user._id)
+router.post('/', sanitizeBody, authUser, async (req, res, next) => {
+    let newPerson = new Person(req.sanitizedBody)
     try {
-        // setting owner to user Id 
-        newDocument.owner = req.user._id
-        await newDocument.save()
-        res.status(201).send({ data: newDocument })
+        newPerson.owner = req.user._id
+        await newPerson.save()
+        res.status(201).send({ data: newPerson })
     } catch (error) {
         log.error(error)
         next(error)
     }
 })
 
-
-router.get('/:id', authUser ,async (req, res, next) => {
+router.get('/:id', authUser, async (req, res, next) => {
     try {
-        // await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
-        const document = await Person.findById(req.params.id)
-        // .populate('gifts')
-        .populate('owner')        
+        const person = await Person.findById(req.params.id).populate('owner')
+        res.send({ data: person })
 
-        console.log(`DOCUMENT.GIFTS: ${document.gifts}`)
-        res.send({ data: document }) 
-        if (!document) {
-            throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
+        if (!person) {
+            throw new ResourceNotFoundError(
+                `We could not find a Person with the id ${req.params.id}`
+            )
         }
     } catch (err) {
         log.error(err)
@@ -60,11 +50,9 @@ router.get('/:id', authUser ,async (req, res, next) => {
     }
 })
 
-//using this for put and patch
 const update = (overwrite = false) => async (req, res, next) => {
     try {
-        // await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
-        const document = await Person.findByIdAndUpdate(
+        const updatePerson = await Person.findByIdAndUpdate(
             req.params.id,
             req.sanitizedBody,
             {
@@ -73,10 +61,14 @@ const update = (overwrite = false) => async (req, res, next) => {
                 runValidators: true,
             }
         )
-        if (!document) throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
-        document.owner = req.user._id
-        await document.save()
-        res.send({ data: document })
+
+        if (!updatePerson)
+            throw new ResourceNotFoundError(
+                `We could not find a Person with the id ${req.params.id}`
+            )
+            updatePerson.owner = req.user._id
+        await updatePerson.save()
+        res.send({ data: updatePerson })
     } catch (err) {
         next(err)
     }
@@ -86,10 +78,14 @@ router.patch('/:id', sanitizeBody, authUser, update(false))
 
 router.delete('/:id', authUser, async (req, res, next) => {
     try {
-        await validateId(req.params.id) // TO DO: does not print out 404 message on PostMan
-        const document = await Person.findByIdAndRemove(req.params.id)
-        if (!document) throw new ResourceNotFoundError(`We could not find a Person with the id ${req.params.id}`)
-        res.send({ data: document })
+        await validateId(req.params.id)
+        const person = await Person.findByIdAndRemove(req.params.id)
+        
+        if (!person)
+            throw new ResourceNotFoundError(
+                `We could not find a Person with the id ${req.params.id}`
+            )
+        res.send({ data: person })
     } catch (err) {
         next(err)
     }

@@ -15,9 +15,7 @@ connectDatabase()
 
 const app = express()
 
-logger.info(app.get('env')) // tells us in the terminal what ENV we are in - defaults to development if we do not set the ENV variable
-// run this command in the terminal to set to prod ENV... export NODE_ENV=production
-// run this command in the terminal to set to dev ENV... export NODE_ENV=development
+logger.info(app.get('env'))
 
 // middlewares
 app.use(cors())
@@ -28,7 +26,7 @@ app.use(express.json())
 app.use(sanitizeMongo())
 
 // health check route
-app.get('/', (req, res) => res.send({ data: { healthStatus: 'UP' } })) 
+app.get('/', (req, res) => res.send({ data: { healthStatus: 'UP' } }))
 
 // route handlers
 app.use('/api/people', peopleRouter)
