@@ -30,7 +30,6 @@ export default function (req, res, next) {
         })
     }
 
-    // Validate the JWT
     try {
         const payload = jwt.verify(token, jwtSecretKey, {
             algorithms: ['HS256'],
